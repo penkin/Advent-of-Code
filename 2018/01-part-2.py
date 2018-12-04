@@ -1,5 +1,5 @@
-def get_inputs(fileName):
-    with open(fileName, 'r') as f:
+def get_inputs(file_name):
+    with open(file_name, 'r') as f:
         return [int(frequency) for frequency in f.readlines()]
 
 
@@ -18,5 +18,4 @@ def get_calibration_frequency(inputs):
             past_frequencies.add(frequency)
 
 
-inputs = get_inputs('01.input.txt')
-print(get_calibration_frequency(inputs))
+print(get_calibration_frequency(get_inputs('01.input.txt')))
