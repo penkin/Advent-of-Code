@@ -19,6 +19,13 @@ def get_sum_two(expenses: list, total: int) -> (int, int):
 
 def get_sum_three(expenses: list, total: int) -> (int, int, int):
     """
+    Gets three lines in the expense list that sum up to the passed in total.
+    :param expenses:
+        List of int.
+    :param total:
+        The total that should be met.
+    :return:
+        Three numbers that make up the total.
     """
     for i, expense in enumerate(expenses):
         for _, other_expense in enumerate(expenses, i):
